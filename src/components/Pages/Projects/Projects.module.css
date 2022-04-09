@@ -1,0 +1,29 @@
+.projects {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+}
+
+.project-card {
+    opacity: 0;
+    animation: slideUp .3s ease-in-out forwards;
+    animation-delay: calc(var(--position) * .1s)
+}
+
+@media (min-width: 750px) {
+    .projects {
+        width: 90%;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(1.5rem);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

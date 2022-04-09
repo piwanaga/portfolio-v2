@@ -1,0 +1,40 @@
+.home {
+    max-width: 800px;
+    
+}
+
+.name {
+    font-size: 1.1rem;
+    margin-bottom: .5rem;
+    margin-top: 10rem;
+    animation: slideUp .3s ease-in-out forwards;
+}
+
+.tagline {
+    font-size: 2.2rem;
+    margin-top: 0;
+    opacity: 0;
+    animation: slideUp .3s ease-in-out .1s forwards;
+}
+
+.button {
+    opacity: 0;
+    animation: slideUp .3s ease-in-out .2s forwards;
+}
+
+@media (min-width: 750px) {
+    main {
+        width: 90%;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(1.5rem);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
