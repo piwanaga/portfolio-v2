@@ -7,11 +7,11 @@ import Button from '../../Common/Button'
 const Home = () => {
     return (
         <main className={styles.home}>
-            <p className={styles.name}>Phillip Iwanaga</p>
+            <p className={styles.name}>PHILLIP IWANAGA</p>
             <h1 className={styles.tagline}>Software engineer, doop dee doo.</h1>
             <div className={styles.button}>
                 <Link to='/about'>
-                    <Button text='More About Me'/>
+                    <Button text='more about me'/>
                 </Link>
             </div>
         </main>

@@ -1,11 +1,32 @@
+.container {
+    display: flex;
+    align-items: center;
+}
+
 .title {
     font-weight: 400;
     font-size: 1.5rem;
+    /* font-family: 'Roboto Mono', monospace; */
     margin: 1rem 0;
     cursor: pointer;
     transition: color .3s;
 }
 
-.title:hover {
+/* .title:hover {
     color: white;
+} */
+
+.carat {
+    width: 0; 
+    height: 0; 
+    border-top: .45rem solid transparent;
+    border-bottom: .45rem solid transparent;
+    border-left: .65rem solid black;
+    margin-right: .5rem;
+    transition: all .1s ease-in-out;
+}
+
+.expanded .carat {
+    transform: rotate(90deg);
+    color: red;
 }

@@ -8,7 +8,8 @@
 .project-card {
     opacity: 0;
     animation: slideUp .3s ease-in-out forwards;
-    animation-delay: calc(var(--position) * .1s)
+    animation-delay: calc(var(--position) * .1s);
+    margin-bottom: 1rem;
 }
 
 @media (min-width: 750px) {

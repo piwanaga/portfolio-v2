@@ -3,9 +3,10 @@ import styles from './Header.module.css'
 
 import Logo from './Logo'
 import ToggleButton from './ToggleButton'
-import HeaderList from './HeaderList'
+import MobileHeaderList from './MobileHeaderList'
+import DesktopHeaderList from './DesktopHeaderList'
 
-const links = ['about', 'projects', 'connect']
+const links = ['About', 'Projects', 'Connect']
 
 const Header = () => {
     const [isActive, setIsActive] = useState(false)
@@ -21,8 +22,9 @@ const Header = () => {
     return (
         <header className={styles.header}>
             <Logo />
-            <ToggleButton toggleActive={toggleActive}/>
-            <HeaderList links={links} isActive={isActive} setInactive={setInactive}/>
+            <ToggleButton isActive={isActive} toggleActive={toggleActive}/>
+            <MobileHeaderList links={links} isActive={isActive} setInactive={setInactive}/>
+            <DesktopHeaderList links={links}/>
         </header>
     )
 }

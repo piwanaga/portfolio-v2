@@ -4,35 +4,46 @@
     max-width: 800px;
 }
 
-h1 {
+.about h1 {
     opacity: 0;
     letter-spacing: .1rem;
     animation: slideUp .3s ease-in-out forwards;
+    margin-bottom: 1rem;
 }
 
-p {
+.tagline {
     opacity: 0;
-    font-size: 1.2rem;
-    letter-spacing: .05rem;
+    font-size: 1.3rem;
+    letter-spacing: .03rem;
+    line-height: 1.5;
     animation: slideUp .3s ease-in-out .2s forwards;
+    margin-bottom: 1.5rem;
 }
 
 .self-portrait {
-    max-width: 400px;
+    /* max-width: 200px; */
+    width: 100%;
     opacity: 0;
-    animation: slideUp .3s ease-in-out .4s forwards;
-    /* border-radius: 50%; */
-    /* animation: rotate 4s infinite linear; */
+    animation: slideLeft .3s ease-in-out .4s forwards;
+    margin-bottom: 1.5rem;
 }
 
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
+.bio {
+    opacity: 0;
+    letter-spacing: .03rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    margin-top: 0;
+    animation: slideUp .3s ease-in-out .6s forwards;
+}
 
-    to {
-        transform: rotate(360deg)
-    }
+.buttons {
+    opacity: 0;
+    animation: slideUp .3s ease-in-out .8s forwards;
+}
+
+.resume {
+    margin-left: 1rem;
 }
 
 @keyframes slideUp {
@@ -42,6 +53,17 @@ p {
     }
     100% {
         transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(1.5rem);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
         opacity: 1;
     }
 }

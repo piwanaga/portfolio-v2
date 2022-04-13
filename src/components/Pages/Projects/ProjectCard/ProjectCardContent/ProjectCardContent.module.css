@@ -1,20 +1,29 @@
 .content {
     display: flex;
     flex-direction: column;
-    font-family: 'Roboto Mono', monospace;
+    /* font-family: 'Roboto Mono', monospace; */
+}
+
+.description {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    animation: slideUp .5s ease-in-out forwards;
 }
 
 .project-details {
     display: flex;
     flex-direction: column;
+    
 }
 
 .image {
-    filter: brightness(70%);
-    opacity: 80%;
-    margin-bottom: .5rem;
+    opacity: 0;
+    filter: brightness(80%);
+    margin-bottom: 1.5rem;
     transition: opacity .3s;
     z-index: -1;
+    animation: slideLeft .5s ease-in-out .2s forwards;
 }
 
 .image:hover {
@@ -22,22 +31,21 @@
     opacity: 100%;
 }
 
-.description {
-    margin: 0;
-    font-size: 1rem;
-    margin-bottom: .5rem;
-}
-
 .technologies {
+    opacity: 0;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
+    margin-bottom: 1rem;
+    animation: slideUp .5s ease-in-out .4s forwards;
 }
 
 .links {
+    opacity: 0;
     display: flex;
     align-items: flex-start;
     flex-grow: 1;
+    animation: slideUp .5s ease-in-out .6s forwards;
     /* width: 100%; */
 }
 
@@ -58,5 +66,27 @@
 
     .links {
         justify-content: flex-end;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(.75rem);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(1rem);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
     }
 }

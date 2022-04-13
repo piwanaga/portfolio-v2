@@ -1,0 +1,36 @@
+.nav {
+    display: flex;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    /* background-color: #dd704e; */
+    background-color: white;
+    opacity: 0;
+    z-index: 10;
+    transform: translateX(100%);
+    transition: all .4s ease-in-out;
+}
+
+.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10rem;
+    padding-left: 0;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+}
+
+@media (min-width: 600px) {
+    .nav {
+        display: none;
+    }
+}

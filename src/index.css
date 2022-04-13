@@ -5,9 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(-45deg, #db4011,#38bbeb);
+  /* background: linear-gradient(-45deg, #db4011,#38bbeb);
   background-size: 400% 400%;
-  animation: gradient 20s ease infinite;
+  animation: gradient 20s ease infinite; */
   font-family: 'Lato', sans-serif;
   height: 100vh;
 }

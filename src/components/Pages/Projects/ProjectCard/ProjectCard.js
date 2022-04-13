@@ -14,7 +14,7 @@ const ProjectCard = ({ project }) => {
 
     return (
         <div className={styles.card}>
-            <ProjectCardTitle title={title} handleClick={handleClick}/>
+            <ProjectCardTitle title={title} expanded={expanded} handleClick={handleClick}/>
             {expanded && 
             <ProjectCardContent 
                 links={links}
