@@ -10,12 +10,14 @@ const ProjectCardContent = ({ links, description, technologies, image, alt }) =>
             <p className={styles.description}>{description}</p>
             <div className={styles['project-details']}>
                 <img src={image} className={styles.image} alt={alt}/>
-                <div className={styles.technologies}>
-                    {technologies.map((tech) => <TechBadge key={tech} tech={tech}/>)}
-                </div>
-                <div className={styles.links}>
-                    {links && links.github && <ProjectLink link={links.github} text='Github'/>}
-                    {links && links.live && <ProjectLink link={links.live} text='Live'/>}
+                <div className={styles['tech-links-container']}>
+                    <div className={styles.technologies}>
+                        {technologies.map((tech) => <TechBadge key={tech} tech={tech}/>)}
+                    </div>
+                    <div className={styles.links}>
+                        {links && links.github && <ProjectLink link={links.github} text='github'/>}
+                        {links && links.live && <ProjectLink link={links.live} text='live'/>}
+                    </div>
                 </div>
             </div>
         </div>

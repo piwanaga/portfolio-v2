@@ -1,9 +1,16 @@
 .badge {
-    background-color: transparent;
-    border-radius: 16px;
-    border: .5px solid black;
-    padding: .3rem .75rem;
-    color: black;
-    margin: 0 .5rem .5rem 0;
-    font-size: .8rem;
+    display: flex;
+    align-items: center;
+    margin: 0 .5rem .2rem 0;
+}
+
+.bullet {
+    margin-right: .2rem;
+    font-size: .75rem;
+}
+
+.tech {
+    font-size: .75rem;
+    letter-spacing: .03rem;
+    margin: 0;
 }

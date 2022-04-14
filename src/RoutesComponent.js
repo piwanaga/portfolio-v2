@@ -5,7 +5,7 @@ import Projects from './components/Pages/Projects'
 import Connect from './components/Pages/Connect'
 import Home from './components/Pages/Home'
 
-const RoutesComponent = () => {
+const RoutesComponent = ({ setIsHome }) => {
     return (
         <Routes>
             <Route 
@@ -22,7 +22,7 @@ const RoutesComponent = () => {
             />
             <Route 
                 path='/'
-                element={<Home />}
+                element={<Home setIsHome={setIsHome}/>}
             />
         </Routes>
     )

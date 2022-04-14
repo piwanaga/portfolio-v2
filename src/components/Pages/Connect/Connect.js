@@ -4,7 +4,7 @@ import styles from './Connect.module.css'
 const links = [
     {title: 'LinkedIn', url: 'https://www.linkedin.com/in/phillipiwanaga/'},
     {title: 'GitHub', url: 'https://github.com/piwanaga'},
-    {title: 'Email', url: 'phillip.iwanaga@gmail.com'},
+    {title: 'Email', url: 'mailto: phillip.iwanaga@gmail.com'},
     {title: 'Resume', url: 'https://docs.google.com/document/d/17EPEr1zRZUVHAIp4vxw1txft8bG9SWSI6rr_Su9nVak/edit?usp=sharing'}
 ]
 

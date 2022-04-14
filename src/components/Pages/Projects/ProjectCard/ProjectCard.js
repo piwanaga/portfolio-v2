@@ -13,7 +13,7 @@ const ProjectCard = ({ project }) => {
     }
 
     return (
-        <div className={styles.card}>
+        <div className={expanded ? `${styles.card} ${styles.expanded}`: styles.card}>
             <ProjectCardTitle title={title} expanded={expanded} handleClick={handleClick}/>
             {expanded && 
             <ProjectCardContent 
@@ -22,6 +22,7 @@ const ProjectCard = ({ project }) => {
                 technologies={technologies}
                 image={image}
                 alt={alt}
+                expanded={expanded}
             />}
         </div>
     )

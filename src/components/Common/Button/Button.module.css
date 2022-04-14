@@ -1,4 +1,4 @@
-.button {
+.light {
     font-size: .7rem;
     padding: .6rem 1.2rem;
     letter-spacing: .1rem;
@@ -9,6 +9,23 @@
     transition: background-color .3s;
 }
 
-.button:hover {
+.light:hover {
     background-color: white;
+}
+
+.dark {
+    font-size: .7rem;
+    color: rgb(113, 110, 145);
+    padding: .6rem 1.2rem;
+    letter-spacing: .1rem;
+    background-color: transparent;
+    border-radius: 22px;
+    border: .5px solid rgb(113, 110, 145);
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+.dark:hover {
+    background-color: rgb(113, 110, 145);
+    color: rgb(6, 4, 29);
 }

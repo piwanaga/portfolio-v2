@@ -25,12 +25,19 @@
 
 .top {
     width: 100%;
+    background-color: rgb(113, 110, 145);
     transform: rotate(45deg) translate(2.5px, 2.5px);
 }
 
 .bottom {
     width: 100%;
+    background-color: rgb(113, 110, 145);
     transform: rotate(-45deg) translate(5px, -6px);
+}
+
+.toggle:hover > .top,
+.toggle:hover > .bottom {
+    background-color: white;
 }
 
 @media (min-width: 600px) {

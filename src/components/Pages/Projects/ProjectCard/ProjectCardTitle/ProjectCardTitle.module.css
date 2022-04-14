@@ -3,30 +3,45 @@
     align-items: center;
 }
 
+.title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+}
+
 .title {
     font-weight: 400;
     font-size: 1.5rem;
+    letter-spacing: .03rem;
     /* font-family: 'Roboto Mono', monospace; */
     margin: 1rem 0;
     cursor: pointer;
     transition: color .3s;
 }
 
-/* .title:hover {
-    color: white;
-} */
-
-.carat {
-    width: 0; 
-    height: 0; 
-    border-top: .45rem solid transparent;
-    border-bottom: .45rem solid transparent;
-    border-left: .65rem solid black;
-    margin-right: .5rem;
-    transition: all .1s ease-in-out;
+.icon {
+    transition: all .2s ease-in;
 }
 
-.expanded .carat {
-    transform: rotate(90deg);
-    color: red;
+.expanded .icon {
+    transform: rotate(45deg);
+}
+
+.bar {
+    height: 2px;
+    width: 15px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.top {
+    transform: rotate(90deg) translate(2px, 0)
+}
+
+@media (min-width: 750px) {
+    .expanded {
+        margin-bottom: 1.5rem;
+    }
 }

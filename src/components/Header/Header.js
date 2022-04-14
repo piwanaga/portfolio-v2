@@ -21,10 +21,12 @@ const Header = () => {
 
     return (
         <header className={styles.header}>
-            <Logo />
-            <ToggleButton isActive={isActive} toggleActive={toggleActive}/>
-            <MobileHeaderList links={links} isActive={isActive} setInactive={setInactive}/>
-            <DesktopHeaderList links={links}/>
+            <div className={styles.container}>
+                <Logo />
+                <ToggleButton isActive={isActive} toggleActive={toggleActive}/>
+                <MobileHeaderList links={links} isActive={isActive} setInactive={setInactive}/>
+                <DesktopHeaderList links={links}/>
+            </div>
         </header>
     )
 }

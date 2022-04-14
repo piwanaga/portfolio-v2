@@ -1,7 +1,8 @@
 .about {
     display: flex;
     flex-direction: column;
-    max-width: 800px;
+    margin-bottom: 5rem;
+    /* padding: 1.5rem; */
 }
 
 .about h1 {
@@ -21,12 +22,15 @@
 }
 
 .self-portrait {
-    /* max-width: 200px; */
     width: 100%;
     opacity: 0;
-    animation: slideLeft .3s ease-in-out .4s forwards;
+    animation: slideRight .3s ease-in-out .4s forwards;
     margin-bottom: 1.5rem;
 }
+
+/* .bio-container {
+    margin-bottom: 5rem;
+} */
 
 .bio {
     opacity: 0;
@@ -46,6 +50,92 @@
     margin-left: 1rem;
 }
 
+@media (min-width: 600px) {
+    .about {
+        width: 80%;
+    }
+
+    .intro h1 {
+        margin-bottom: 2rem;
+    }
+
+    .tagline {
+        margin-bottom: 3rem;
+    }
+
+    .self-portrait {
+        margin-bottom: 2rem;
+    }
+
+    .buttons {
+        margin-top: 2rem;
+    }
+}
+
+@media (min-width: 900px) {
+    .intro {
+        width: 50%;
+        margin-bottom: 2rem;
+    }
+
+    .intro h1 {
+        margin-bottom: 2rem;
+    }
+
+    .details {
+        display: flex;
+        width: 100%;
+    }
+
+    .bio-container {
+        padding-left: 3rem;
+    }
+
+    .bio {
+        line-height: 1.75;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .about {
+        margin-top: 4rem;
+    }
+
+    .intro h1 {
+        margin-bottom: 2rem;
+    }
+
+    .tagline {
+        letter-spacing: .04rem;
+        line-height: 1.6;
+    }
+
+    .details {
+        display: flex;
+        width: 100%;
+    }
+
+    .bio-container {
+        padding-left: 3rem;
+    }
+
+    .bio {
+        line-height: 1.75;
+    }
+
+}
+
+@media (min-width: 1300px) {
+    .intro {
+        width: 40%;
+    }
+
+    .self-portrait {
+        width: 85%
+    }
+}
+
 @keyframes slideUp {
     0% {
         transform: translateY(1.5rem);
@@ -57,19 +147,13 @@
     }
 }
 
-@keyframes slideLeft {
+@keyframes slideRight {
     0% {
-        transform: translateX(1.5rem);
+        transform: translateX(-1.5rem);
         opacity: 0;
     }
     100% {
         transform: translateX(0);
         opacity: 1;
-    }
-}
-
-@media (min-width: 750px) {
-    .about {
-        width: 90%;
     }
 }
