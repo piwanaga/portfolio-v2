@@ -3,7 +3,6 @@ import styles from './Projects.module.css'
 
 import projects from './projectList'
 import ProjectCard from './ProjectCard/'
-import Button from '../../Common/Button'
 
 const Projects = () => {
     const images = []
