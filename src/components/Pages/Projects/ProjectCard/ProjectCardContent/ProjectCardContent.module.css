@@ -25,6 +25,7 @@
 .image {
     opacity: 0;
     margin-bottom: 1.5rem;
+    height: auto;
     transition: opacity .3s;
     animation: slideRight .5s ease-in-out .2s forwards;
 }
