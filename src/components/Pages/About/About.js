@@ -21,10 +21,10 @@ const About = () => {
                     <p className={styles.bio}>Now I'm seeking to bridge my passions for problem solving and digital technology by pursuing a career in software engineering--one where I'm able to take advantage of my soft skills while building my technical ones.</p>
                     <div className={styles.buttons}>
                         <Link to='/projects'>
-                            <Button text='view projects' theme='light'/>
+                            <Button text='view projects' theme='blue'/>
                         </Link>
                         <a className={styles.resume} href='https://docs.google.com/document/d/17EPEr1zRZUVHAIp4vxw1txft8bG9SWSI6rr_Su9nVak/edit?usp=sharing' target='_blank' rel="noreferrer">
-                            <Button text='view resume' theme='light'/>
+                            <Button text='view resume' theme='blue'/>
                         </a>
                     </div>
                 </div>

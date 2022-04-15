@@ -17,7 +17,7 @@ const Home = ({ setIsHome }) => {
         <main className={styles.home}>
             <div className={styles.content}>
                 <p className={styles.name}>PHILLIP IWANAGA</p>
-                <h1 className={styles.tagline}>Software engineer, team player, perpetual learner.</h1>
+                <h1 className={styles.heading}>Software engineer, team player, people person.</h1>
                 <div className={styles.button}>
                     <Link to='/about'>
                         <Button text='more about me' theme='dark'/>

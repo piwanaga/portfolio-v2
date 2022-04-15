@@ -27,6 +27,9 @@ const Footer = () => {
                     <a href='https://www.instagram.com/pheestoned/' target='_blank' rel='noreferrer'>
                         <FontAwesomeIcon icon={faInstagram} className={styles.icon}/>
                     </a>
+                    <a href='https://www.instagram.com/pheestoned/' target='_blank' rel='noreferrer' className={styles.resume}>
+                        resume
+                    </a>
                 </div>
             </div>
         </div>

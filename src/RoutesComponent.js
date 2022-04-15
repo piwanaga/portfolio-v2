@@ -16,10 +16,10 @@ const RoutesComponent = ({ setIsHome }) => {
                 path='/projects'
                 element={<Projects />}
             />
-            <Route 
+            {/* <Route 
                 path='/connect'
                 element={<Connect />}
-            />
+            /> */}
             <Route 
                 path='/'
                 element={<Home setIsHome={setIsHome}/>}

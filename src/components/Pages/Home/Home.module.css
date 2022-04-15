@@ -23,7 +23,7 @@
     animation: slideUp .5s ease-in-out forwards;
 }
 
-.tagline {
+.heading {
     font-size: 2rem;
     color: white;
     letter-spacing: .2rem;
@@ -36,7 +36,7 @@
 
 .button {
     opacity: 0;
-    animation: slideRight .5s ease-in-out .8s forwards;
+    animation: slideRight .5s ease-in-out 1s forwards;
 }
 
 @media (min-width: 600px) {
@@ -50,7 +50,7 @@
         width: 75%;
     }
 
-    .tagline {
+    .heading {
         font-size: 2.2rem;
     }
 }

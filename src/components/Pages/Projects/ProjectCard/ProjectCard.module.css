@@ -1,11 +1,10 @@
 .card {
-    padding-bottom: 1rem;
-    border-bottom: 1px solid rgb(239, 237, 245);
+    border-bottom: 1px solid rgb(206, 231, 247);
     padding: 0 2rem 1rem 2rem;
 }
 
 .expanded {
-    background-color: rgb(239, 237, 245);
+    background-color: rgb(240, 249, 255);
     padding: 0rem 2rem 2rem 2rem;
 }
 

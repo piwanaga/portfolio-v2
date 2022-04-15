@@ -19,10 +19,16 @@
 
 .tagline {
     opacity: 0;
-    font-size: 1.3rem;
-    letter-spacing: .03rem;
+    font-size: 1.1rem;
+    letter-spacing: .05rem;
     line-height: 1.5;
+    /* color: rgb(113, 110, 145); */
+    margin-bottom: 0;
     animation: slideUp .3s ease-in-out .2s forwards;
+}
+
+.resume-top {
+    display: none;
 }
 
 .project-card-container {
@@ -51,7 +57,6 @@
 @media (min-width: 1300px) {
     .tagline-projects-container {
         flex-direction: row;
-        /* align-items: flex-start; */
     }
 
     .tagline {

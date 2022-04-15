@@ -39,6 +39,11 @@
     color: white;
 }
 
+.resume {
+    text-decoration: none;
+    color:white;
+}
+
 @media (min-width: 600px) {
     .content {
         width: 73%;

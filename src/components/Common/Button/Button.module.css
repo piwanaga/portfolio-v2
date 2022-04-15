@@ -14,6 +14,23 @@
     background-color: white;
 }
 
+.blue {
+    font-size: .7rem;
+    padding: .6rem 1.2rem;
+    letter-spacing: .1rem;
+    color: rgb(35, 35, 202);
+    background-color: transparent;
+    border-radius: 22px;
+    border: .5px solid rgb(35, 35, 202);
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+/* .blue:hover {
+    color: white;
+    background-color: rgb(35, 35, 202);
+} */
+
 .dark {
     font-size: .7rem;
     color: rgb(113, 110, 145);

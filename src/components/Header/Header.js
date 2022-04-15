@@ -6,7 +6,7 @@ import ToggleButton from './ToggleButton'
 import MobileHeaderList from './MobileHeaderList'
 import DesktopHeaderList from './DesktopHeaderList'
 
-const links = ['About', 'Projects', 'Connect']
+const links = ['About', 'Projects']
 
 const Header = () => {
     const [isActive, setIsActive] = useState(false)
