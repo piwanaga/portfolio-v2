@@ -12,7 +12,7 @@ const Connect = () => {
     return (
         <div className={styles.connect}>
             <h1>Connect with me</h1>
-            {links.map((link, idx) => <a key={link.title} href={link.url} style={{'--position': idx}}>{link.title}</a>)}
+            {links.map((link, idx) => <a key={link.title} href={link.url} rel="noreferrer" style={{'--position': idx}}>{link.title}</a>)}
         </div>
     )
 }

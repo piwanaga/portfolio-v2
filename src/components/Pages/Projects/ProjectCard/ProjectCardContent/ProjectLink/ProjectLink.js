@@ -4,8 +4,8 @@ import Button from '../../../../../Common/Button'
 
 const ProjectLink = ({ link, text }) => {
     return (
-        <a href={link} target='_blank' className={styles.link}>
-            <Button text={text} style='light'/>
+        <a href={link} target='_blank' rel="noreferrer" className={styles.link}>
+            <Button text={text} theme='light'/>
         </a>
     )
 }

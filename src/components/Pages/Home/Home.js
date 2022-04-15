@@ -20,7 +20,7 @@ const Home = ({ setIsHome }) => {
                 <h1 className={styles.tagline}>Software engineer, team player, perpetual learner.</h1>
                 <div className={styles.button}>
                     <Link to='/about'>
-                        <Button text='more about me' style='dark'/>
+                        <Button text='more about me' theme='dark'/>
                     </Link>
                 </div>
             </div>
