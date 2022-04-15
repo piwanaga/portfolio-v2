@@ -24,8 +24,8 @@
 
 .image {
     opacity: 0;
+    width: 100%;
     margin-bottom: 1.5rem;
-    height: auto;
     transition: opacity .3s;
     animation: slideRight .5s ease-in-out .2s forwards;
 }
@@ -46,7 +46,6 @@
     align-items: flex-start;
     flex-grow: 1;
     animation: slideUp .5s ease-in-out .6s forwards;
-    /* width: 100%; */
 }
 
 @media (min-width: 750px) {
