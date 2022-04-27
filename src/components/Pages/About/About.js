@@ -10,7 +10,7 @@ const About = () => {
         <div className={styles.about}>
             <div className={styles.intro}>
                 <h1>Hi, I'm Phillip Iwanaga</h1>
-                <p className={styles.tagline}>I'm a software engineer with a background in the service industry. Based in Seattle, relocating to New York City.</p>
+                <p className={styles.tagline}>I'm a software engineer with a background in the service industry. Currently based in Seattle, relocating to New York City in June 2022.</p>
             </div>
             <div className={styles.details}>
                 <div>

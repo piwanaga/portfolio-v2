@@ -1,5 +1,11 @@
+.logo-container {
+    background-color: rgb(6, 4, 29);
+    padding: .25rem .5rem;
+    border-radius: 2px;
+}
+
 .logo {
     text-decoration: none;
     font-size: 1.3rem;;
-    color: black;
+    color: white;
 }
